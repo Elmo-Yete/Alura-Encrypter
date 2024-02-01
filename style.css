@@ -1,0 +1,128 @@
+body {
+  background-color: #f3f5fc;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.container__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+.container__left-image {
+  width: 4rem;
+  border-radius: 0.2rem;
+}
+
+.container__left-textarea {
+  border: none;
+  background-color: #f3f5fc;
+  padding: 10px;
+  font-family: Poppins;
+  font-size: 1rem;
+  color: #0a3871;
+}
+
+.container__left-textarea::placeholder {
+  color: #808080;
+  font-family: Poppins;
+}
+
+.container__left-textarea:focus {
+  outline: none;
+}
+
+.container__left--div {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.container__left--img {
+  width: 1rem;
+}
+.container__left-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.container__left-button--blue {
+  background-color: #b5ffe9;
+  border-color: #444545;
+  color: black;
+  font-family: Poppins;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+
+.container__left-button--gray {
+  background-color: #b5ffe9;
+  border-color: #444545;
+  color: black;
+  font-family: Poppins;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+.container__right {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  height: auto;
+}
+
+.container__right-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Agregar desplazamiento vertical si el contenido es demasiado grande */
+  border-radius: 2rem;
+}
+
+.container__right-image {
+  margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .container__right-image {
+    margin: 0;
+    display: none;
+  }
+}
+
+.container__right-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.container__right-paragraph {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+/* Estilo adicional para los elementos del historial */
+.container__right-wrapper div {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-wrap: wrap;
+  width: 100vh;
+}

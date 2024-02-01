@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Text Encryption</title>
+  </head>
+  <body class="container">
+    <article class="container__left">
+      <img
+        class="container__left-image"
+        src="./assets/alura.webp"
+        alt="Alura logo"
+      />
+      <textarea
+        class="container__left-textarea"
+        name=""
+        id="textToPass"
+        cols="80"
+        rows="20"
+        placeholder="Ingresa el texto aqui"
+      ></textarea>
+      <div class="container__left--div">
+        <img
+          src="./assets/info-svgrepo-com.svg"
+          alt=""
+          class="container__left--img"
+        />
+        <span class="">Solo letras minusculas y sin acentos</span>
+      </div>
+      <section class="container__left-buttons">
+        <button class="container__left-button--blue" id="encrypt">
+          Encriptar
+        </button>
+        <button class="container__left-button--gray" id="unencrypt">
+          Desencriptar
+        </button>
+      </section>
+    </article>
+    <article class="container__right">
+      <div class="container__right-wrapper">
+        <img class="container__right-image" src="./assets/Search.webp" alt="" />
+        <div class="container__right-content">
+          <h5 class="container__right-title">Ningun mensaje fue encontrado</h5>
+          <p class="container__right-paragraph">
+            Ingresa el texto que deseas encriptar
+          </p>
+        </div>
+      </div>
+    </article>
+    <script src="main.js"></script>
+  </body>
+</html>
